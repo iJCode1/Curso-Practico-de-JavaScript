@@ -1,0 +1,80 @@
+:root{
+    --purple: #9381ff;
+    --purple-light: #b8b8ff;
+    --white: #FFF;
+}
+
+html{
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+}
+
+body{
+    background-color: #293241;
+    margin: 0;
+    width: 100%;
+}
+
+header{
+    padding-block-start: 30px;
+}
+
+h1{
+    color: white;
+    font-size: 4.5rem;
+    margin: 0;
+    text-align: center;
+    margin-block-end: 100px;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.discounts{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: .5fr;
+}
+
+.discounts-item{
+    background-color: var(--white);
+    border: 8px solid var(--purple-light);
+    box-shadow: -8px 8px 0 0 var(--purple);
+    text-align: center;
+}
+
+.discounts-item img{
+    text-align: center;
+    margin-block-start: 30px;
+    margin-block-end: 40px;
+}
+
+.discounts-item form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding-block-end: 50px;
+    padding-inline: 50px;
+}
+
+.discounts-item form label{
+    font-size: 1.6rem;
+}
+
+.discounts-item form input{
+    padding-block-start: 5px;
+    padding-block-end: 5px;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+}
+
+.discounts-item form button{
+    padding-inline: 26px;
+    padding-block: 5px;
+    background-color: var(--white);
+    border: 2px solid var(--purple);
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es una pagina web para aplicar descuentos a productos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/js.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/descuentos.css">
+    <title>iJCode - Descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Descuentos de Productos</h1>
+    </header>
+    <div class="container">
+        <div class="discounts">
+            <div class="discounts-item">
+                <img src="./assets/images/product.webp" alt="Imagen de producto" width="120px" height="120px">
+                <form>
+                    <label for="price">Ingresa el precio del producto</label>
+                    <input type="number" name="price" id="price"/>
+                    <label for="discount">Ingresa el descuento del producto</label>
+                    <input type="number" name="discount" id="discount"/>
+                    <button type="button" onclick="aplicarDescuento()">Calcular</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/descuentos.js"></script>
+</body>
+</html>
