@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Practicando un poco de Javascript">
+    <link rel="stylesheet" href="./css/figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>iJCode - Curso Practico de JS</title>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Figuras Geom&eacute;tricas</h1>
+        </header>
+        <div class="figures">
+            <div class="figures-item">
+                <h2>Cuadrado</h2>
+                <img src="./assets/images/cuadrado.webp" alt="Imagen de un Cuadrado"/>
+                <form>
+                    <label for="cLado">Ingresa el tamaño de cada lado</label>
+                    <input name="cLado" id="cLado" type="number">
+                    <button type="button" onclick="cuadrado2()">Calcular</button>
+                </form>
+            </div>
+
+            <div class="figures-item">
+                <h2>Triangulo</h2>
+                <img src="./assets/images/triangulo.webp" alt="Imagen de un Triangulo"/>
+                <form>
+                    <label for="tLado1">Ingresa el tamaño del primer lado</label>
+                    <input name="tLado1" id="tLado1" type="number">
+                    <label for="tLado2">Ingresa el tamaño del segundo lado</label>
+                    <input name="tLado2" id="tLado2" type="number">
+                    <label for="tBase">Ingresa el tamaño de la base</label>
+                    <input name="Base" id="tBase" type="number">
+                    <label for="tAltura">Ingresa el tamaño del primer lado</label>
+                    <input name="tAltura" id="tAltura" type="number">
+                    <button type="button" onclick="triangulo2()">Calcular</button>
+                </form>
+            </div>
+
+            <div class="figures-item">
+                <h2>Ciculo</h2>
+                <img src="./assets/images/circulo.webp" alt="Imagen de un Circulo"/>
+                <form>
+                    <label for="cRadio">Ingresa el valor del radio</label>
+                    <input name="cRadio" id="cRadio" type="number">
+                    <button type="button" onclick="circulo2()">Calcular</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="./js/figuras.js"></script>
 </body>
 </html>

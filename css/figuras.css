@@ -1,0 +1,103 @@
+:root{
+    --dark: #22223b;
+    --white: #edf2fb;
+    --open: "Open Sans", sans-serif;
+}
+
+*{
+    font-size: 10px;
+}
+
+body{
+    background: var(--dark);
+    margin: 0;
+    font-family: var(--open);
+}
+
+header{
+    width: 100%;
+}
+
+h1{
+    color: var(--white);
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.figures{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1, 1fr;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    margin-block-end: 100px;
+}
+
+.figures-item{
+    align-items: center;
+    display: inline-grid;
+    background-color: var(--white);
+    border: 8px solid #c1d3fe;
+    box-shadow: -8px 8px 0 0 #abc4ff;
+    justify-items: center;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+.figures-item h2{
+    font-size: 3rem;
+}
+
+.figures-item img{
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+.figures-item form{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.figures-item form label{
+    align-self: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+}
+
+.figures-item form input{
+    padding: 4px 10px;
+    font-size: 1.4rem;
+}
+
+.figures-item form button{
+    background-color: #c1d3fe;
+    border: 2px solid #abc4ff;
+    font-size: 1.6rem;
+    padding: 5px 30px;
+}
+
+@media screen and (min-width: 660px){
+    h1{
+        font-size: 5rem; 
+    }
+    
+    .figures{
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 100px;
+    }
+}
