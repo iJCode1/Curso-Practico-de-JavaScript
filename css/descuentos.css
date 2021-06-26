@@ -37,6 +37,7 @@ h1{
     display: grid;
     justify-content: center;
     grid-template-columns: .5fr;
+    margin-block-end: 50px;
 }
 
 .discounts-item{
@@ -77,4 +78,8 @@ h1{
     padding-block: 5px;
     background-color: var(--white);
     border: 2px solid var(--purple);
+}
+
+.priceWithDiscount{
+    font-size: 1.6rem;
 }
