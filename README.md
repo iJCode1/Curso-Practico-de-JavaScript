@@ -1,7 +1,7 @@
 # Curso-Práctico-de-JavaScript
 
-##Practicando un poco de JS :)
+## Practicando un poco de JS :)
 
-###Modulos:
+### Modulos:
 
-- 1. Figuras Geométricas
+1. Figuras Geométricas
