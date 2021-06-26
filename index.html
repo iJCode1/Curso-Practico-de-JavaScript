@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Practicando un poco de Javascript">
+    <meta name="description" content="Practicando un poco de Javascript">
     <link rel="stylesheet" href="./css/figuras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,6 +49,20 @@
                     <label for="cRadio">Ingresa el valor del radio</label>
                     <input name="cRadio" id="cRadio" type="number">
                     <button type="button" onclick="circulo2()">Calcular</button>
+                </form>
+            </div>
+
+            <div class="figures-item">
+                <h2>Triangulo Isósceles</h2>
+                <img src="./assets/images/trianguloIso.webp" alt="Imagen de un Triangulo"/>
+                <form>
+                    <label for="isoLado1">Ingresa el tamaño del primer lado</label>
+                    <input name="isoLado1" id="isoLado1" type="number">
+                    <label for="isoLado2">Ingresa el tamaño del segundo lado</label>
+                    <input name="isoLado2" id="isoLado2" type="number">
+                    <label for="isoBase">Ingresa el tamaño de la base</label>
+                    <input name="isoBase" id="isoBase" type="number">
+                    <button type="button" onclick="trianguloIso()">Calcular</button>
                 </form>
             </div>
         </div>
