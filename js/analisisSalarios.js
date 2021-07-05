@@ -49,3 +49,12 @@ const mediana = array => {
 
 console.log(`La mediana es: ${mediana(ordenarSalarios)}`);
 //La mediana es: 19373.5
+
+/*
+    Obteniendo el 10% superior de salarios en mexico
+*/
+
+const salariosTop = ordenarSalarios.slice((ordenarSalarios.length * (100 - 10)) / 100, ordenarSalarios.length);
+const salariosTopMediana = mediana(salariosTop);
+
+console.log(`La mediana de los salarios top es: ${salariosTopMediana}`);
